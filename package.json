@@ -1,0 +1,15 @@
+{
+  "name": "ace-theme",
+  "version": "1.4.0",
+  "description": "Ace Theme 1.4.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/jpramirezpra/acethemep.git)"
+  },
+  "author": "Jose Pablo Ramirez",
+  "license": "ISC"
+}
