@@ -132,7 +132,7 @@
     top: 110px;
 }
 @media (max-width:479px) {
-    .navbar: not(.navbar-collapse)~.modal.aside-vc.navbar-offset .modal-dialog {
+    .navbar:not(.navbar-collapse)~.modal.aside-vc.navbar-offset .modal-dialog {
     top: 90px;
 }
 }

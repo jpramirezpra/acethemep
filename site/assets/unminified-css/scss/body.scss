@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variable';
 
 .main-content, body, html {
     min-height: 100%
@@ -33,7 +33,6 @@ body {
     bottom: 0;
     top: 0;
     background-color: $background-color;
-    ;
 }
 .main-container.container, .rtl .main-container.container {
     padding-left: 0;
