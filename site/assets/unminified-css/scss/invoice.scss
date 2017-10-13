@@ -1,0 +1,35 @@
+.invoice-info {
+    line-height: 24px!important;
+    color: #444;
+    vertical-align: bottom;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.invoice-info-label {
+    display: inline-block;
+    max-width: 100px;
+    text-align: right;
+    font-size: 14px;
+}
+.ace-thumbnails>li, .ace-thumbnails>li>:first-child {
+    display: block;
+    position: relative;
+}
+.invoice-box .label-large[class*=arrowed] {
+    margin-left: 11px!important;
+    max-width: 95%}
+.error-container {
+    margin: 20px;
+    padding: 0;
+    background: #FFF;
+}
+@media only screen and (max-width:767px) {
+    .error-container {
+    margin: 12px;
+}
+}
+@media only screen and (max-width:479px) {
+    .error-container {
+    margin: 6px;
+}
+}

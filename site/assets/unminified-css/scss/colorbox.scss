@@ -1,0 +1,81 @@
+#cboxLoadingGraphic>.ace-icon, .ace-spinner.touch-spinner .spinbox-buttons>.btn>.ace-icon {
+    vertical-align: middle;
+    display: inline-block;
+}
+#cboxCurrent, #cboxTitle {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+#colorbox:active, #colorbox:focus {
+    outline: 0;
+}
+#cboxBottomCenter, #cboxBottomLeft, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxTopCenter, #cboxTopLeft, #cboxTopRight {
+    background: 0 0!important;
+    opacity: 0;
+}
+#cboxContent {
+    border: 12px solid #000;
+    background-color: #FFF;
+    padding: 7px;
+    overflow: visible;
+}
+#cboxOverlay {
+    background: rgba(0, 0, 0, .95);
+    background: #000;
+}
+#cboxCurrent {
+    left: 64px;
+}
+#cboxTitle {
+    color: #777;
+}
+#cboxClose, #cboxNext, #cboxPrevious {
+    background: 0 0;
+    text-indent: 0;
+    width: 26px;
+    height: 26px;
+    line-height: 22px;
+    padding: 0 4px;
+    text-align: center;
+    border: 2px solid #999;
+    border-radius: 16px;
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#cboxNext:hover, #cboxPrevious:hover {
+    color: #333;
+    border-color: #666;
+}
+#cboxClose {
+    background-color: #000;
+    border: 2px solid #FFF;
+    border-radius: 32px;
+    color: #FFF;
+    font-size: 21px;
+    height: 28px;
+    width: 28px;
+    padding-bottom: 2px;
+    margin-left: 0;
+    right: -14px;
+    top: -14px;
+}
+#cboxLoadingOverlay {
+    background: 0 0!important;
+}
+#cboxLoadingGraphic {
+    background: #FFF!important;
+    text-align: center;
+}
+#cboxLoadingGraphic>.ace-icon {
+    background-color: #FFF;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 48%;
+    text-align: center;
+    font-size: 24px;
+    color: #FE7E3E;
+}

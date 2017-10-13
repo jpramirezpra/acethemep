@@ -1,0 +1,108 @@
+.accordion-style1.panel-group .panel {
+    border-radius: 0;
+    border-color: #CDD8E3;
+    background-color: #FFF;
+    box-shadow: none;
+}
+.accordion-style1.panel-group .panel:last-child {
+    border-bottom-width: 1px;
+}
+.accordion-style1.panel-group .panel .collapse {
+    background-color: #FFF;
+}
+.accordion-style1.panel-group .panel+.panel {
+    margin-top: 2px;
+}
+.accordion-style1.panel-group .panel-heading+.panel-collapse .panel-body {
+    border-top-color: #CDD8E3!important;
+}
+.accordion-style1.panel-group .panel-heading {
+    padding: 0;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle {
+    color: #4C8FBD;
+    background-color: #EEF4F9;
+    position: relative;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    padding: 10px;
+    display: block;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle.collapsed {
+    color: #478FCA;
+    font-weight: 400;
+    background-color: #F9F9F9;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle:hover {
+    color: #6EA6CC;
+    background-color: #F1F8FD;
+    text-decoration: none;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle:active, .accordion-style1.panel-group .panel-heading .accordion-toggle:focus {
+    outline: 0;
+    text-decoration: none;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle>.ace-icon:first-child {
+    width: 16px;
+}
+.accordion-style1.panel-group .panel-heading .accordion-toggle:hover>.ace-icon:first-child {
+    text-decoration: none;
+}
+.accordion-style1.panel-group .collapse.in>.panel-body, .accordion-style1.panel-group .panel-body {
+    border-top: 1px solid #CDD8E3;
+}
+.accordion-style1.panel-group.no-padding {
+    padding: 0;
+}
+.accordion-style2.panel-group .panel {
+    border-width: 0;
+}
+.accordion-style2.panel-group .panel:last-child {
+    border-bottom-width: 0;
+}
+.accordion-style2.panel-group .panel+.panel {
+    margin-top: 4px;
+}
+.accordion-style2.panel-group .panel .panel-body {
+    border-top: none;
+}
+.accordion-style2.panel-group .panel-heading .accordion-toggle {
+    background-color: #EDF3F7;
+    border: 2px solid #6EAED1;
+    border-width: 0 0 0 2px;
+}
+.accordion-style2.panel-group .panel-heading .accordion-toggle:hover {
+    text-decoration: none;
+}
+.accordion-style2.panel-group .panel-heading .accordion-toggle.collapsed {
+    background-color: #F3F3F3;
+    color: #606060;
+    border-width: 0 0 0 1px;
+    border-color: #D9D9D9;
+}
+.accordion-style2.panel-group .panel-heading .accordion-toggle.collapsed:hover {
+    background-color: #F6F6F6;
+    color: #438EB9;
+    text-decoration: none;
+}
+.accordion-style2.panel-group .collapse.in>.panel-body, .accordion-style2.panel-group .panel-body {
+    border-top: none;
+}
+.accordion-style2.panel-group .accordion-style2.panel-group .panel {
+    border-bottom: 1px dotted #D9D9D9;
+}
+.accordion-style2.panel-group .accordion-style2.panel-group .panel:last-child {
+    border-bottom: none;
+}
+.accordion-style2.panel-group .accordion-style2.panel-group .panel .panel-heading, .accordion-style2.panel-group .accordion-style2.panel-group .panel .panel-heading .accordion-toggle {
+    background-color: transparent;
+    border-width: 0;
+    font-size: 13px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+.accordion-style2.panel-group .accordion-style2.panel-group .panel .panel-heading {
+    padding-top: 0;
+    padding-bottom: 0;
+}

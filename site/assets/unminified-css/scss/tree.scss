@@ -1,0 +1,263 @@
+.tree {
+    margin: auto;
+    padding: 0 0 0 9px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.tree:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: 16px;
+    left: 0;
+    z-index: 1;
+    border: 1px dotted #67B2DD;
+    border-width: 0 0 0 1px;
+}
+.tree .tree {
+    padding: 0;
+    overflow: visible;
+}
+.tree .tree:before {
+    display: none;
+}
+.tree .tree-branch-name, .tree .tree-item-name {
+    cursor: pointer;
+}
+.tree .icon-caret {
+    vertical-align: baseline!important;
+}
+.tree .tree-branch {
+    width: auto;
+    min-height: 20px;
+    cursor: pointer;
+}
+.tree .tree-branch .tree-branch-header {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+}
+.tree .tree-branch .tree-branch-header:hover {
+    background-color: rgba(98, 168, 209, .1);
+}
+.tree .tree-branch .icon-caret~.tree-branch-header {
+    display: inline-block;
+    width: 80%;
+    width: calc(100% - 36px);
+}
+.tree .tree-branch.tree-selected>.tree-branch-header {
+    background-color: rgba(98, 168, 209, .18);
+}
+.tree .tree-branch .tree-branch-header .tree-branch-name, .tree .tree-item .tree-item-name {
+    display: inline;
+    z-index: 2;
+}
+.tree .tree-branch .tree-branch-header>.tree-branch-name>.ace-icon:first-child, .tree .tree-item>.tree-item-name>.ace-icon:first-child {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    top: -1px;
+}
+.tree .tree-branch>.tree-branch-header>.tree-branch-name>.tree-label {
+    margin-left: 2px;
+}
+.tree .tree-branch>.tree-branch-header>.tree-branch-name>.ace-icon:first-child {
+    margin: -2px 0 0 -2px;
+}
+.tree .tree-branch:last-child:after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    bottom: 0;
+    left: -10px;
+    border-left: 2px solid #FFF;
+}
+.tree .tree-branch .tree-branch-children, .tree .tree-branch .tree-branch-children.tree {
+    margin: 0 0 0 23px;
+    padding: 0;
+    position: relative;
+}
+.tree .tree-branch .tree-branch-children.tree:before, .tree .tree-branch .tree-branch-children:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -14px;
+    bottom: 16px;
+    left: -14px;
+    border: 1px dotted #67B2DD;
+    border-width: 0 0 0 1px;
+}
+.tree .tree-branch.tree-selected>.icon-caret~.tree-branch-header>.tree-branch-name>.tree-label {
+    font-weight: 700;
+}
+.tree .tree-item {
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    max-width: calc(100% - 20px);
+}
+.tree .tree-item:hover {
+    background-color: rgba(98, 168, 209, .1);
+}
+.tree .tree-item.tree-selected, .tree .tree-item.tree-selected:hover {
+    background-color: rgba(98, 168, 209, .16);
+}
+.tree .tree-item>.tree-item-name>.ace-icon:first-child {
+    margin-right: 3px;
+}
+.tree .tree-item>.tree-item-name>.tree-label>.ace-icon:first-child {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.tree .tree-item>.ace-icon:first-child {
+    margin-top: -1px;
+}
+.tree .tree-branch, .tree .tree-item {
+    position: relative;
+    list-style: none;
+    border-left: 1px solid #FFF;
+    margin: 1px 0;
+}
+.tree .tree-branch:before, .tree .tree-item:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -13px;
+    width: 18px;
+    height: 0;
+    border-top: 1px dotted #67B2DD;
+    z-index: 1;
+}
+.tree .tree-selected {
+    color: #6398B0;
+}
+.tree .tree-branch .tree-branch-header {
+    border-radius: 0;
+}
+.tree .tree-branch .tree-branch-header, .tree .tree-item {
+    padding: 5px;
+    color: #4D6878;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.tree .tree-item>.tree-item-name>.ace-icon:first-child {
+    color: #F9E8CE;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: #FAFAFA;
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+.tree .tree-selected>.tree-item-name>.ace-icon:first-child {
+    background-color: #F9A021;
+    border-color: #F9A021;
+    color: #FFF;
+}
+.tree .tree-minus.ace-icon:first-child, .tree .tree-plus.ace-icon:first-child {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+    height: 11px;
+    width: 11px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    text-align: center;
+    border: 1px solid #8BAEBF;
+    line-height: 10px;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+}
+.tree .tree-minus.ace-icon:first-child:before, .tree .tree-plus.ace-icon:first-child:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 0;
+    border-top: 1px solid #4D6878;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+.tree .tree-plus.ace-icon:first-child:after {
+    content: "";
+    display: block;
+    height: 7px;
+    width: 0;
+    border-left: 1px solid #4D6878;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+.tree .tree-unselectable .tree-item>.tree-item-name>.tree-label>.ace-icon:first-child {
+    color: #5084A0;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.tree .ace-icon[class*="-down"] {
+    transform: rotate(-45deg);
+}
+.tree .ace-icon[class*="-download"] {
+    transform: none;
+}
+.tree .fa-spin {
+    height: auto;
+}
+.tree .tree-loading {
+    margin-left: 36px;
+}
+.tree img {
+    display: inline;
+    veritcal-align: middle;
+}
+.tree .icon-open {
+    width: 16px;
+    position: relative;
+    z-index: 2;
+    padding-left: 2px;
+}
+.tree .tree-branch .tree-leaf-head.ace-icon, .tree .tree-leaf .tree-branch-head.ace-icon {
+    display: none;
+}
+.tree .tree-branch.tree-leaf .tree-leaf-head {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: #DDD;
+    background-color: #FFF;
+}
+.tree .tree-selected.tree-branch.tree-leaf .tree-leaf-head {
+    color: #FEB902;
+}
+.tree-container {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-left-color: #67B2DD;
+    display: block;
+    padding: 0;
+    max-width: 200px;
+    max-height: 250px;
+}
+.tree-container .tree::before {
+    margin-left: -1px;
+}

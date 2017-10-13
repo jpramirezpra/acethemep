@@ -1,0 +1,56 @@
+.ui-dialog, .ui-jqdialog {
+    z-index: 1050!important;
+    background-color: #FFF;
+    padding: 0;
+    border: 1px solid #DDD;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.ui-dialog .ui-dialog-titlebar, .ui-dialog .ui-jqdialog-titlebar, .ui-jqdialog .ui-dialog-titlebar, .ui-jqdialog .ui-jqdialog-titlebar {
+    background-color: #F1F1F1;
+    font-size: 16px;
+    color: #669FC7;
+    padding: 0;
+}
+.ui-dialog .ui-dialog-title, .ui-dialog .ui-jqdialog-title, .ui-jqdialog .ui-dialog-title, .ui-jqdialog .ui-jqdialog-title {
+    float: none!important;
+    width: auto;
+}
+.ui-dialog .widget-header, .ui-jqdialog .widget-header {
+    margin: 0;
+    border-width: 0 0 1px;
+}
+.ui-dialog .ui-dialog-buttonpane, .ui-dialog .ui-jqdialog-buttonpane, .ui-jqdialog .ui-dialog-buttonpane, .ui-jqdialog .ui-jqdialog-buttonpane {
+    background-color: #EFF3F8;
+    border-top: 1px solid #E4E9EE;
+}
+.ui-dialog .ui-dialog-buttonpane button, .ui-dialog .ui-jqdialog-buttonpane button, .ui-jqdialog .ui-dialog-buttonpane button, .ui-jqdialog .ui-jqdialog-buttonpane button {
+    font-size: 14px;
+}
+.ui-dialog .ui-dialog-titlebar-close, .ui-dialog .ui-jqdialog-titlebar-close, .ui-jqdialog .ui-dialog-titlebar-close, .ui-jqdialog .ui-jqdialog-titlebar-close {
+    border: none;
+    background: 0 0;
+    opacity: .4;
+    color: #D15B47;
+    padding: 0;
+    top: 50%;
+    right: 8px!important;
+    text-align: center;
+}
+.ui-dialog .ui-dialog-titlebar-close:before, .ui-dialog .ui-jqdialog-titlebar-close:before, .ui-jqdialog .ui-dialog-titlebar-close:before, .ui-jqdialog .ui-jqdialog-titlebar-close:before {
+    content: "\f00d";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 16px;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-jqdialog-titlebar-close:hover, .ui-jqdialog .ui-dialog-titlebar-close:hover, .ui-jqdialog .ui-jqdialog-titlebar-close:hover {
+    opacity: 1;
+    text-decoration: none;
+    padding: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close .ui-button-text, .ui-dialog .ui-jqdialog-titlebar-close .ui-button-text, .ui-jqdialog .ui-dialog-titlebar-close .ui-button-text, .ui-jqdialog .ui-jqdialog-titlebar-close .ui-button-text {
+    text-indent: 0;
+    visibility: hidden;
+}
+.ui-dialog .widget-header .ui-dialog-titlebar-close, .ui-dialog .widget-header .ui-jqdialog-titlebar-close, .ui-jqdialog .widget-header .ui-dialog-titlebar-close, .ui-jqdialog .widget-header .ui-jqdialog-titlebar-close {
+    right: 10px!important;
+}

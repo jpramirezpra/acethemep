@@ -1,0 +1,94 @@
+
+/*FULLCALENDAR*/
+.fc-toolbar h2 {
+    font-size: 22px;
+    color: #65A0CE;
+}
+.fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed hr, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: #BCD4E5;
+}
+.fc-unthemed .fc-today {
+    background: #FFC;
+}
+.fc-event {
+    border-width: 0;
+    color: #FFF;
+    padding: 1px 1px 2px 2px;
+    border-radius: 0;
+}
+.fc-event:not([class*=label-]) {
+    background-color: #ABBAC3;
+}
+.fc-event.label-yellow {
+    color: #963;
+}
+.fc-event.label-light {
+    color: #888;
+}
+.label-yellow .fc-event {
+    color: #963;
+}
+.label-light .fc-event {
+    color: #888;
+}
+[class*=label-]>.fc-event, [class*=label-]>.fc-event>.fc-event-skin.fc-event-head {
+    background-color: inherit;
+}
+.fc-event-vert>.fc-event, .fc-event.fc-event-vert {
+    padding: 0 0 1px;
+}
+.fc-day-number {
+    color: #2E6589;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.fc .fc-axis, .fc-widget-header {
+    background: #ECF2F7;
+    color: #8090A0;
+}
+.fc-event-hori, .fc-event-vert {
+    border-radius: 0!important;
+    border-color: transparent;
+}
+.fc-event-vert .fc-event-content {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.fc-event-vert .fc-event-time {
+    padding: 0;
+}
+.fc-state-default {
+    border: none;
+}
+.fc-state-default, .fc-state-default .fc-button-inner {
+    border: none;
+    background-color: #ABBAC3;
+    color: #FFF;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0!important;
+    margin-left: 2px;
+}
+.fc-state-disabled, .fc-state-disabled .fc-button-inner {
+    opacity: .75;
+    filter: alpha(opacity=75);
+    color: #DDD;
+}
+.fc-state-active, .fc-state-active .fc-button-inner {
+    border-color: #4F99C6;
+    background-color: #6FB3E0;
+}
+.fc-state-hover, .fc-state-hover .fc-button-inner {
+    background-color: #8B9AA3;
+}
+.fc .fc-button-group>* {
+    margin: 0 1px 0 0;
+}
+@media only screen and (max-width:480px) {
+    .fc-header td {
+    display: block;
+    width: auto;
+    text-align: left;
+}
+}
